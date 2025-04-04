@@ -12,8 +12,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-secondary to-white py-20 pt-32">
-      <div className="container mx-auto px-4">
+    <section className="min-h-screen flex items-center justify-center py-20 pt-32 relative">
+      {/* Background Image with Blur */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
+        style={{ 
+          backgroundImage: 'url("/lovable-uploads/65e83e35-6507-48c0-b2b8-36e53e26fdd4.png")',
+          filter: 'blur(8px)',
+          transform: 'scale(1.1)', // Scale slightly to avoid blur edges
+        }}
+      ></div>
+      
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-secondary/90 to-white/80"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary slide-in">
             ENG. KIPCHUMBA IAN
