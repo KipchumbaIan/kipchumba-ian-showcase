@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 pt-32 relative">
+    <section className="min-h-[70vh] flex items-center justify-center py-10 pt-16 relative">
       {/* Background Image with Blur */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
@@ -28,23 +28,23 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary slide-in">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-primary slide-in">
             ENG. KIPCHUMBA IAN
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-10 slide-in delay-100">
+          <p className="text-lg md:text-xl text-gray-700 mb-6 slide-in delay-100">
             Engineering Solutions, Building Tomorrow
           </p>
           <div className="slide-in delay-200">
             <Button 
               onClick={scrollToAbout} 
-              className="group bg-primary hover:bg-accent text-white rounded-full px-8 py-6 flex items-center space-x-2 mx-auto"
+              className="group bg-primary hover:bg-accent text-white rounded-full px-6 py-4 flex items-center space-x-2 mx-auto"
             >
               <span>Discover More</span>
-              <ArrowDown className="transition-transform group-hover:translate-y-1" size={18} />
+              <ArrowDown className="transition-transform group-hover:translate-y-1" size={16} />
             </Button>
           </div>
-          <div className="mt-16 slide-in delay-300 hidden md:block">
-            <div className="w-0.5 h-20 bg-gray-400 mx-auto"></div>
+          <div className="mt-8 slide-in delay-300 hidden md:block">
+            <div className="w-0.5 h-12 bg-gray-400 mx-auto"></div>
           </div>
         </div>
       </div>
